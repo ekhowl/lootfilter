@@ -45,13 +45,13 @@ Show
     LinkedSockets >= 3
     SetBorderColor 170 158 130
 
-# 6S item with less than 5 links.
+# Vendorable 6-sockets.
 Show
     Sockets = 6
     LinkedSockets < 5
     SetBorderColor 170 158 130
 
-# Cartographer's Chisel items
+# Items for Chisel recipe.
 Show
     BaseType "Gavel" "Stone Hammer" "Rock Breaker"
     Rarity Normal
@@ -70,20 +70,22 @@ Show
     Quality = 20
     SetBorderColor 170 158 130
 
-# Flasks with quality
+# Flasks with any quality (for Bauble recipe)
 Show
     Class Flask
     Quality >= 1
     SetBorderColor 170 158 130
 
 
-# Essentials
+#
+# Essential stuff to highlight.
+#
 
 # Show all uniques (obviously)
 Show
     Rarity Unique
 
-# Colored border for gems with quality.
+# Colored border for gems with any quality.
 Show
     Class Gem
     Quality >= 1
@@ -92,7 +94,7 @@ Show
 Show
     Class "Quest Items" "Map" "Map Fragments" "Currency" "Gems"
 
-# 6-link.
+# 6-link item.
 Show
     LinkedSockets = 6
     SetFontSize 42
@@ -100,7 +102,7 @@ Show
 # 5-link.
 Show
     LinkedSockets = 5
-    SetFontSize 39
+    SetFontSize 38
 
 # Fishing rods.
 Show
@@ -130,7 +132,7 @@ Show
 # Chance Orb Bases
 #
 Show
-    BaseType "Occultist's Vestment" "Spine Bow" "Prophecy Wand" "Judgement Staff" "Amethyst Ring"
+    BaseType "Occultist's Vestment" "Spine Bow" "Prophecy Wand" "Judgement Staff" "Amethyst Ring" "Gavel"
     Rarity Normal
     SetBorderColor 175 96 37
 
@@ -162,7 +164,7 @@ Show
     ItemLevel <= 45
 
 
-# Bad Jewellery Bases
+# Jewellery Bases you don't care about.
 Show
     BaseType "Paua Ring" "Coral Amulet" "Studded Belt" "Cloth Belt"
     Rarity Normal
@@ -173,7 +175,7 @@ Show
 Show
     Class "Rings" "Amulets" "Belts"
 
-# Everything else we don't care about.
+# Everything else we don't care about is shown smaller.
 Show
     SetBackgroundColor 17 17 17 100
     SetFontSize 22
