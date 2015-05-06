@@ -1,0 +1,158 @@
+# EKH's LOOT FILTER
+
+# Heavily influenced by ZiggyD's loot filter, thank you for a solid base to work from!
+
+
+# Jewels
+Show
+    BaseType "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel"
+    SetBorderColor 157 0 157
+    PlayAlertSound 2
+
+#High End Currency
+Show
+    BaseType "Exalted Orb" "Eternal Orb" "Divine Orb"
+    SetBackgroundColor 163 152 129
+    SetTextColor 0 0 0
+    SetBorderColor 0 0 0
+    PlayAlertSound 7
+    SetFontSize 39
+
+Show
+    BaseType "Chaos Orb" "Gemcutter's Prism" "Regal Orb" "Orb of Alchemy" "Vaal Orb"
+    SetBackgroundColor 163 152 129
+    SetTextColor 0 0 0
+    SetBorderColor 0 0 0
+
+Show
+    BaseType "Mirror of Kalandra"
+    SetBackgroundColor 255 128 255
+    SetTextColor 0 0 0
+    SetBorderColor 0 0 0
+    SetFontSize 42
+    PlayAlertSound 8
+
+
+# Vendor Recipes
+# Quality Recipes all have same grey border
+Show
+    SocketGroup RGB
+    LinkedSockets >= 3
+    SetBorderColor 170 158 130
+
+Show
+    Sockets = 6
+    LinkedSockets < 5
+    SetBorderColor 170 158 130
+
+Show
+    BaseType "Gavel" "Stone Hammer" "Rock Breaker"
+    Rarity Normal
+    SetTextColor 159 159 159
+    SetBorderColor 170 158 130
+
+Show
+    Class "Gloves" "Helmets" "Boots" "Daggers" "Wands" "Claws" "One Hand Swords" "One Hand Maces"
+    Quality = 20
+    SetBorderColor 170 158 130
+
+Show
+    BaseType "Spirit Shield" "Buckler" "Spiked Shield"
+    Quality = 20
+    SetBorderColor 170 158 130
+
+Show
+    Class Flask
+    Quality >= 1
+    SetBorderColor 170 158 130
+
+
+#Essentials
+
+Show
+    Rarity Unique
+
+Show
+    Class Gem
+    Quality >= 1
+    SetBorderColor 0 128 128
+
+Show
+    Class "Quest Items" "Map" "Map Fragments" "Currency" "Gems"
+
+Show
+    LinkedSockets = 6
+    SetFontSize 42
+
+Show
+    LinkedSockets = 5
+    SetFontSize 39
+
+Show
+    Class "Fishing Rods"
+    SetTextColor 255 128 255
+    SetBorderColor 255 128 255
+
+
+#Showing All Rares Above 45
+Show
+    ItemLevel >= 45
+    Rarity Rare
+
+
+#Crafting Bases
+Show
+    LinkedSockets >= 4
+
+Show
+    BaseType "Sai" "Demon Fangs" "Moon Staff" "Ancient Needle" "Moon Claw" "Ancient Blade" "Dragon Mace" "Maraketh Bow" "Tiger Hook" "Sacrament Wand" "Ghost Axe" "Demon Sceptre" "Morning Star" "Sacrificial Garb"
+
+
+
+#Chance Orb Bases
+Show
+    BaseType "Occultist's Vestment" "Spine Bow" "Prophecy Wand" "Judgement Staff" "Amethyst Ring"
+    Rarity Normal
+    SetBorderColor 175 96 37
+
+
+#USEFUL FLASKS
+Show
+    Class "Utility Flasks"
+
+Hide
+    BaseType "Eternal Life Flask" "Divine Life Flask"
+    ItemLevel >= 75
+
+Show
+    BaseType "Eternal Life Flask" "Divine Life Flask"
+
+Hide
+    BaseType "Hallowed Life Flask"
+    ItemLevel >= 61
+
+Show
+    BaseType "Hallowed Life Flask"
+
+
+# Leveling
+# Disables filtering for new characters
+Show
+    ItemLevel <= 45
+
+
+#Bad Jewellery Bases
+Show
+    BaseType "Paua Ring" "Coral Amulet" "Studded Belt" "Cloth Belt"
+    Rarity Normal
+    SetBackgroundColor 17 17 17 100
+    SetFontSize 22
+
+#Showing all other jewellery
+Show
+    Class "Rings" "Amulets" "Belts"
+
+#Everything Else of No Value
+Show
+    SetBackgroundColor 17 17 17 100
+    SetFontSize 22
