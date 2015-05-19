@@ -131,10 +131,10 @@ Show
 #
 # Chance Orb Bases
 #
-Show
-    BaseType "Occultist's Vestment" "Spine Bow" "Prophecy Wand" "Judgement Staff" "Amethyst Ring" "Gavel"
-    Rarity Normal
-    SetBorderColor 175 96 37
+#Show
+#    BaseType "Occultist's Vestment" "Spine Bow" "Prophecy Wand" "Judgement Staff" "Amethyst Ring" "Gavel"
+#    Rarity Normal
+#    SetBorderColor 175 96 37
 
 #
 # Flasks that matter.
