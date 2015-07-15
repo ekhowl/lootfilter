@@ -34,6 +34,11 @@ Show
     SetFontSize 42
     PlayAlertSound 8
 
+#
+# Divination Cards
+#
+Show
+     Class "Divination Card"
 
 # Vendor Recipes
 #
