@@ -97,7 +97,7 @@ Show
     SetBorderColor 0 128 128
 
 Show
-    Class "Quest Items" "Map" "Map Fragments" "Currency" "Gems"
+    Class "Quest Items" "Maps" "Map Fragments" "Currency" "Gems"
 
 # 6-link item.
 Show
