@@ -3,12 +3,12 @@
 #
 # Heavily influenced by ZiggyD's loot filter, thank you for a solid base to work from!
 #
-# ---
+#
 
 # Jewels
 Show
     BaseType "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel"
-    SetBorderColor 157 0 157
+    SetBorderColor 153 255 153
     PlayAlertSound 2
 
 # High End Currency
@@ -38,7 +38,8 @@ Show
 # Divination Cards
 #
 Show
-     Class "Divination Card"
+    Class "Divination Card"
+    SetBorderColor 192 192 192
 
 # Vendor Recipes
 #
@@ -145,7 +146,7 @@ Show
 
 Hide
     BaseType "Hallowed Life Flask"
-    ItemLevel >= 61
+    ItemLevel >= 65
 
 Show
     BaseType "Hallowed Life Flask"
