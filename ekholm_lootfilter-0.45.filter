@@ -120,7 +120,7 @@ Show
 Show
     ItemLevel >= 60
     Rarity Rare
-    SetBorderColor 255 128 255
+    SetBorderColor 255 255 102
     
 # Showing all rares with item level 45 or higher.
 Show
