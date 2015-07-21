@@ -121,6 +121,11 @@ Show
     ItemLevel >= 45
     Rarity Rare
 
+# Add a border color for rares with ilvl 60 or higher.
+Show
+    ItemLevel >= 60
+    Rarity Rare
+    SetBorderColor 255 128 255
 
 #
 # Crafting Bases
