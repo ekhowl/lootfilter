@@ -116,16 +116,16 @@ Show
     SetTextColor 255 128 255
     SetBorderColor 255 128 255
 
-# Showing all rares with item level 45 or higher.
-Show
-    ItemLevel >= 45
-    Rarity Rare
-
 # Add a border color for rares with ilvl 60 or higher.
 Show
     ItemLevel >= 60
     Rarity Rare
     SetBorderColor 255 128 255
+    
+# Showing all rares with item level 45 or higher.
+Show
+    ItemLevel >= 45
+    Rarity Rare
 
 #
 # Crafting Bases
