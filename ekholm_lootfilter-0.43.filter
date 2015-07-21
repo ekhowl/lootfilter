@@ -9,7 +9,7 @@
 Show
     BaseType "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel"
     SetBorderColor 153 255 153
-    PlayAlertSound 2
+    PlayAlertSound 2 45
 
 # High End Currency
 Show
@@ -17,7 +17,7 @@ Show
     SetBackgroundColor 163 152 129
     SetTextColor 0 0 0
     SetBorderColor 0 0 0
-    PlayAlertSound 7
+    PlayAlertSound 7 60
     SetFontSize 39
 
 Show
@@ -32,7 +32,7 @@ Show
     SetTextColor 0 0 0
     SetBorderColor 0 0 0
     SetFontSize 42
-    PlayAlertSound 8
+    PlayAlertSound 8 80
 
 #
 # Divination Cards
