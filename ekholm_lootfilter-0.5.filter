@@ -1,7 +1,7 @@
-# LOOT FILTER FOR PATH OF EXILE
+# LOOT FILTER FOR PATH OF EXILE: THE AWAKENING
 # By Jussi "ekhowl" Ekholm.
 #
-# Heavily influenced by ZiggyD's loot filter, thank you for a solid base to work from!
+# Based on ZiggyD's loot filter, thank you for a solid base to work from!
 #
 #
 
@@ -41,9 +41,9 @@ Show
     Class "Divination Card"
     SetBorderColor 192 192 192
 
+#
 # Vendor Recipes
 #
-# Quality Recipes have grey border
 
 # Chromatic items
 Show
@@ -64,13 +64,13 @@ Show
     SetTextColor 159 159 159
     SetBorderColor 170 158 130
 
-# "Small" items that are 20% quality
+# Small items that are 20% quality are shown with grey border.
 Show
     Class "Gloves" "Helmets" "Boots" "Daggers" "Wands" "Claws" "One Hand Swords" "One Hand Maces"
     Quality = 20
     SetBorderColor 170 158 130
 
-# "Small" shields with 20% quality
+# Small shields with 20% quality are shown with grey border
 Show
     BaseType "Spirit Shield" "Buckler" "Spiked Shield"
     Quality = 20
@@ -82,12 +82,11 @@ Show
     Quality >= 1
     SetBorderColor 170 158 130
 
-
 #
-# Essential stuff to highlight.
+# All the essential stuff to highlight.
 #
 
-# Show all uniques (obviously)
+# Uniques
 Show
     Rarity Unique
 
@@ -139,8 +138,13 @@ Show
 # Flasks that matter.
 #
 
+# Show Granites, resistance flasks etc
 Show
     Class "Utility Flasks"
+
+Show
+    BaseType "Granite Flask"
+    SetBorderColor 255 128 255
 
 Hide
     BaseType "Eternal Life Flask" "Divine Life Flask"
@@ -156,25 +160,19 @@ Hide
 Show
     BaseType "Hallowed Life Flask"
 
-
 # Leveling
 # Disables filtering for new characters (shows everything that has item level 45 or below)
 Show
     ItemLevel <= 45
 
-
 # Jewellery Bases you don't care about.
-Show
+Hide
     BaseType "Paua Ring" "Coral Amulet" "Studded Belt" "Cloth Belt"
     Rarity Normal
-    SetBackgroundColor 17 17 17 100
-    SetFontSize 22
 
 # Showing all other jewellery
 Show
     Class "Rings" "Amulets" "Belts"
 
-# Everything else we don't care about is shown smaller.
-Show
-    SetBackgroundColor 17 17 17 100
-    SetFontSize 22
+# Everything else we don't care about is hidden
+Hide
