@@ -115,12 +115,19 @@ Show
     SetTextColor 255 128 255
     SetBorderColor 255 128 255
 
-# Add a border color for rares with ilvl 60 or higher.
+# Add a border color for rares with ilvl 75 or higher (Regal Orb recipe).
+Show
+    ItemLevel >= 75
+    Rarity Rare
+    SetBorderColor 255 255 102
+    SetBackgroundColor 204 255 153
+
+# Add a border color for rares with ilvl 60 or higher (Chaos Orb recipe).
 Show
     ItemLevel >= 60
     Rarity Rare
     SetBorderColor 255 255 102
-    
+
 # Showing all rares with item level 45 or higher.
 Show
     ItemLevel >= 45
