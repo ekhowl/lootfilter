@@ -9,7 +9,7 @@
 Show
     BaseType "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel"
     SetBorderColor 153 255 153
-    PlayAlertSound 2 45
+    PlayAlertSound 2
 
 # High End Currency
 Show
@@ -17,7 +17,7 @@ Show
     SetBackgroundColor 163 152 129
     SetTextColor 0 0 0
     SetBorderColor 0 0 0
-    PlayAlertSound 7 60
+    PlayAlertSound 7
     SetFontSize 39
 
 Show
@@ -32,7 +32,7 @@ Show
     SetTextColor 0 0 0
     SetBorderColor 0 0 0
     SetFontSize 42
-    PlayAlertSound 8 80
+    PlayAlertSound 8
 
 #
 # Divination Cards
@@ -140,6 +140,13 @@ Show
 # Items with 4 or higher links.
 Show
     LinkedSockets >= 4
+
+# Crafting bases with ilvl 75 or higher.
+Show
+    Class "Rings" "Amulets" "Belts"
+    ItemLevel >= 75
+    Rarity Normal
+    SetBorderColor 170 158 130
 
 #
 # Flasks that matter.
