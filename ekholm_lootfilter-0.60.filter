@@ -110,6 +110,12 @@ Show
     Class Gem
     Quality >= 1
     SetBorderColor 0 128 128
+    
+# Rare gems get a border color and alert sound as well.
+Show
+    Class Gem
+    BaseType "Empower" "Enhance" "Portal" "Detonate Mines"
+    SetBorderColor 0 50 160
 
 # Quest Items, Currency, Gems, Map Fragments
 Show
